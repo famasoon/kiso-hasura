@@ -1,5 +1,5 @@
 import { VFC } from 'react'
-import { todoVar } from '../cash'
+import { todoVar } from '../cache'
 import { useReactiveVar } from '@apollo/client'
 import Link from 'next/link'
 
@@ -7,7 +7,7 @@ export const LocalStateB: VFC = () => {
   const todos = useReactiveVar(todoVar)
   return (
     <>
-      {todos.map((task, index) => {
+      {todos?.map((task, index) => {
         return (
           <p className="mb-3" key={index}>
             {task.title}
