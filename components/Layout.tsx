@@ -23,7 +23,7 @@ export const Layout: VFC<Props> = ({
             <div className="flex space-x-4">
               <Link href="/">
                 <a
-                  data-testid="heme-nav"
+                  data-testid="home-nav"
                   className="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded"
                 >
                   Home
